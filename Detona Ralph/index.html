@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Farm</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/styles/main.css">
+<link rel="stylesheet" href="./src/styles/game.css">
+<link rel="stylesheet" href="./src/styles/start_end.css">
+<link rel="stylesheet" href="./src/styles/end_game.css">
+
+<body>
+    <section id="start-page" >
+        <div class="start-container container" >
+            <div class="box">
+                <h1 class="start-h1">Detona Farm</h1>
+                <h2>How to play</h2>
+                <p>Click on the animals to score. But watch out for BOMBS! They will score -1 point for you!</p>
+        
+                <button id="start-button">Start</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="hidden" id="game-page">
+        <div class="container">
+            <div id="navbar">
+                <div class="nav-item">
+                    <p class="nav-title">Time left</p>
+                    <p class="nav-result" id="time-left">0</p>
+                </div>
+                <div class="nav-item">
+                    <p class="nav-title">Your score</p>
+                    <p class="nav-result" id="score">0</p>
+                </div>
+            </div>
+    
+            <div id="panel">
+                <div class="panel-grid">
+                    <div class="square" id="1"></div>
+                    <div class="square" id="2"></div>
+                    <div class="square" id="3"></div>
+                    <div class="square" id="4"></div>
+                    <div class="square" id="5"></div>
+                    <div class="square" id="6"></div>
+                    <div class="square" id="7"></div>
+                    <div class="square" id="8"></div>
+                    <div class="square" id="9"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hidden" id="end-page">
+        <div class="end-container container" >
+            <div class="box">
+                <h1 class="start-h1">Your score</h1>
+                <p class="score" id="final-score"></p>
+        
+                <button id="play-again-button">Play Again</button>
+            </div>
+        </div>
+    </section>
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>

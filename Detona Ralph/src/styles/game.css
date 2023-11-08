@@ -1,0 +1,88 @@
+
+#navbar{
+    background-color: #96d1fb;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-block: 2rem;
+}
+
+.nav-title{
+    color: #003785;
+    margin-bottom: 1rem;
+}
+
+#panel::before{
+    background-image: url(../images/background.png);
+    content: "";
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    top: 7rem;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+#panel{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.square{
+    width: 10rem;
+    height: 10rem;
+    border: #96d1fb 1px solid;
+    background-color: #003785;
+}
+
+[class*="enemy"] {
+    background-size: cover;
+}
+
+.enemy-1{
+    background-image: url(../images/panels/1.png);
+}
+.enemy-2{
+    background-image: url(../images/panels/2.png);
+}
+.enemy-3{
+    background-image: url(../images/panels/3.png);
+}
+.enemy-4{
+    background-image: url(../images/panels/4.png);
+}
+.enemy-5{
+    background-image: url(../images/panels/5.png);
+}
+.enemy-6{
+    background-image: url(../images/panels/6.png);
+}
+.enemy-7{
+    background-image: url(../images/panels/7.png);
+}
+.enemy-8{
+    background-image: url(../images/panels/8.png);
+}
+.enemy-9{
+    background-image: url(../images/panels/9.png);
+}
+.enemy-10{
+    background-image: url(../images/panels/10.png);
+}
+
+@media (max-width: 600px) {
+    .square{
+        width: 6rem;
+        height: 6rem;
+    }
+}

@@ -1,0 +1,63 @@
+*{
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(35, 29, 29);
+}
+
+.start-container::before, .end-container::before{
+    background-image: url(../images/background.png);
+    content: "";
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+.start-container, .end-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background-image: linear-gradient(#96d1fb, rgb(86, 132, 198));
+    padding: 3rem 5rem;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+}
+
+.start-h1{
+    font-family: 'Press Start 2P', cursive;
+    color: #003785;
+    margin-bottom: 2rem;
+}
+
+#start-button, #play-again-button{
+    width: fit-content;
+    margin-inline: auto;
+    background-color: #003785;
+    color: white;
+    padding: 0.3rem 2rem;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    margin-top: 1rem;
+    border: 1px solid rgb(35, 29, 29);
+    box-shadow: -2px 6px 4px rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+#start-button:hover, #play-again-button:hover{
+    background-color: #01214e;
+    transform: scale(1.1);
+}
+
+.score{
+    font-size: 5em;
+    margin-block: -2rem;
+}
