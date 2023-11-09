@@ -25,7 +25,7 @@ const state = {
     actions: {
         countDownId: null,
         timerId: null
-    }
+    },
 }
 
 function changePage(page){
@@ -96,7 +96,9 @@ function countDown(){
 function setScore(){
     if(state.values.imageNumber == state.values.bombNumber){
         state.values.score --
+        playSound(false)
     } else{
+        playSound(true)
         state.values.score ++
     }
 
@@ -110,6 +112,16 @@ function addListenerHitBox(){
             setScore();
         }
     }))
+}
+
+function playSound(success){
+    if(success){
+        let audio = new Audio("./src/audios/right.mp3")
+        audio.play();        
+    } else {
+        let audio = new Audio("./src/audios/wrong.mp3")
+         audio.play();       
+    }
 }
 
 function setIntervals(){

@@ -10,6 +10,7 @@
 .nav-title{
     color: #003785;
     margin-bottom: 1rem;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #panel::before{
